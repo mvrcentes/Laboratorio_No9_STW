@@ -8,6 +8,6 @@ This project is a simple calculator built with React. It provides basic math ope
 * yarn/npm
 
 ## Installation
-1. Clone the repository: `$ git clone <repository_url>`
+1. Clone the repository: `$ git clone https://github.com/mvrcentes/Laboratorio_No9_STW.git`
 2. Install dependencies: `yarn install`
 3. Start the development server: `yarn dev`
