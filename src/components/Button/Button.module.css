@@ -1,0 +1,48 @@
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    background-color: #444444;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.Button:hover {
+    background-color: #333333;
+    cursor: pointer;
+}
+
+.Button__operator {
+    background-color: #942aea;
+    color: #c086e7;
+    opacity: 0.6;
+}
+
+.Button__operator:hover {
+    background-color: #942aea;
+    opacity: 0.3;
+}
+
+.Button__equal {
+    height: 215px;
+    background-color: #942aea;
+    color: #fff;
+}
+
+.Button__equal:hover {
+    background-color: #942aea;
+    opacity: 0.6;
+}
+
+.Button__AC {
+    background-color: #fcb82c;
+    color: #fff;
+}
+
+.Button__AC:hover {
+    background-color: #fcb82c;
+    opacity: 0.6;
+}
