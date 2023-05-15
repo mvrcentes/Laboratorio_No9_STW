@@ -1,0 +1,146 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Calculator > should render correctly 1`] = `
+<div>
+  <div
+    class="_Calculator_818a78"
+  >
+    <div
+      class="_Display_818a78"
+      data-testid="display"
+    >
+      0
+    </div>
+    <div
+      class="_Top_818a78"
+    >
+      <div
+        class="_Button_2a1efe _Button__AC_2a1efe"
+        value="AC"
+      >
+        AC
+      </div>
+      <div
+        class="_Button_2a1efe _Button__operator_2a1efe"
+        value="multiply"
+      >
+        x
+      </div>
+      <div
+        class="_Button_2a1efe _Button__operator_2a1efe"
+        value="divide"
+      >
+        ÷
+      </div>
+      <div
+        class="_Button_2a1efe _Button__operator_2a1efe"
+        value="±"
+      >
+        ±
+      </div>
+    </div>
+    <div
+      class="_Bottom_818a78"
+    >
+      <div
+        class="_Numbers_818a78"
+      >
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="7"
+        >
+          7
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="8"
+        >
+          8
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="9"
+        >
+          9
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="4"
+        >
+          4
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="5"
+        >
+          5
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="6"
+        >
+          6
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="1"
+        >
+          1
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="2"
+        >
+          2
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="3"
+        >
+          3
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="."
+        >
+          .
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="0"
+        >
+          0
+        </div>
+        <div
+          class="_Button_2a1efe _Button__undefined_2a1efe"
+          value="←"
+        >
+          ←
+        </div>
+      </div>
+      <div
+        class="_Operations_818a78"
+      >
+        <div
+          class="_Button_2a1efe _Button__operator_2a1efe"
+          value="add"
+        >
+          +
+        </div>
+        <div
+          class="_Button_2a1efe _Button__operator_2a1efe"
+          value="subtract"
+        >
+          -
+        </div>
+        <div
+          class="_Button_2a1efe _Button__equal_2a1efe"
+          value="equal"
+        >
+          =
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

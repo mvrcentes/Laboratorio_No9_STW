@@ -17,10 +17,12 @@ export const Calculator = ({ children }) => {
                 setOperator(null)
                 break
             case "±":
-                setInputValue((inputValue) =>
-                    inputValue.startsWith("-")
-                        ? inputValue.slice(1)
-                        : "-" + inputValue
+                setInputValue(
+                    (inputValue) =>
+                        // inputValue.startsWith("-")
+                        //     ? inputValue.slice(1)
+                        //     : "-" + inputValue)
+                        inputValue * -1
                 )
                 break
             case "%":
@@ -41,11 +43,21 @@ export const Calculator = ({ children }) => {
                 setPreviousValue(inputValue)
                 setInputValue("0")
                 break
+            case "←":
+                setInputValue((e) => (
+                    e.length === 1
+                        ? "0"
+                        : 
+                        e.slice(0, -1))
+                    
+                )
+                break
+
             case "=":
                 if (operator && previousValue && inputValue) {
                     let result
                     switch (operator) {
-                        case "÷":
+                        case "/":
                             result =
                                 parseFloat(previousValue) /
                                 parseFloat(inputValue)
@@ -80,18 +92,19 @@ export const Calculator = ({ children }) => {
                 }
                 break
             default:
-                if (inputValue.length < 9) {
-                    setInputValue(
-                        inputValue === "0" ? value : inputValue + value
-                    )
+                if (inputValue.length > 8) {
+                    return
                 }
+                setInputValue(inputValue === "0" ? value : inputValue + value.toString())
                 break
         }
     }
 
     return (
         <div className={style.Calculator}>
-            <div className={style.Display}>{inputValue}</div>
+            <div className={style.Display} data-testid="display">
+                {inputValue}
+            </div>
 
             <div className={style.Top}>
                 <Button
@@ -101,10 +114,10 @@ export const Calculator = ({ children }) => {
                     setSelected={() => handleDisplay("AC")}
                 />
                 <Button
-                    name="×"
+                    name="x"
                     value={"multiply"}
                     backgroundColor={"operator"}
-                    setSelected={() => handleDisplay("*")}
+                    setSelected={() => handleDisplay("x")}
                 />
                 <Button
                     name="÷"
